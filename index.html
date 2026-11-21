@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ceb">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123f78"><meta name="description" content="Offline Cebuano and English KJV Scripture reader.">
+<title>Messianic Scripture</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<header class="topbar"><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">☰</button> <a class="brand" href="#reader"><span aria-hidden="true"><img src="/COYIYHM_logo.png" alt="app logo" height="50" width="50" style="margin-top: 5px;"/></span><span class="brand-copy"><strong>Messianic Scripture</strong><small>Congregation of Yahweh in Yahshua HaMashiach</small></span></a> <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">☾ <span>Dark mode</span></button></header><nav class="main-nav" id="mainNav" aria-label="Sliding navigation">
+<div class="drawer-title"><strong>Menu</strong><button id="closeMenu" aria-label="Close menu">×</button></div>
+<a href="#reader">📖 <span>Bible Reader</span></a><a href="#about">✦<span>About app</span></a><a href="#privacy">⌑ <span>Privacy &amp; policy</span></a><a href="#contact">✉ <span>Contact</span></a>
+<div class="drawer-theme"><span>Appearance</span><button id="drawerTheme" type="button">☾ Dark mode</button></div>
+<p class="drawer-note">Messianic Scripture App<br />Developed by Felip Balandra<br> Website: <a href=""></a></p>
+</nav><main class="layout" id="reader">
+<aside class="sidebar" aria-label="Bible navigation">
+<div class="side-heading"><span class="eyebrow">YOUR SCRIPTURE</span>
+<h2>Library</h2>
+<p>Choose a translation, book and chapter</p>
+</div>
+<label for="version">Bible translation</label><select id="version">
+<option value="ceb">Cebuano</option>
+<option value="kjv">English — King James Version (KJV)</option>
+</select><label for="book" class="book-label">Book of the Bible</label><select id="book"></select>
+<div class="chapter-heading"><label>Chapters</label><span id="chapterCount"></span></div>
+<div id="chapters" class="chapter-grid"></div>
+<p id="offlineStatus" class="offline-status">Cebuano text included in this app.</p>
+</aside>
+<article class="reader">
+<div class="reader-head">
+<div class="reader-meta"><span class="live-dot"></span><span id="chapterLabel" class="kicker"></span><span id="translationTag" class="translation-tag">CEBUANO</span></div>
+<h1 id="title" class="title"></h1>
+<p class="reader-subtitle">Read, reflect, and grow in the Word.</p>
+<div class="nav"><button id="prev" type="button">← <span>Previous</span></button><button id="next" class="primary" type="button"><span>Next</span> →</button></div>
+</div>
+<div id="verses" class="verses" aria-live="polite">
+<p class="loading">Loading Scripture…</p>
+</div>
+<div class="reader-bottom"><span>MESSIANIC SCRIPTURE APP</span><span>Read at your own pace</span></div>
+</article>
+</main>
+<section class="info-section" id="about">
+<div class="info-icon">✦</div>
+<div><span class="eyebrow">ABOUT THE PROJECT</span>
+<h2>About app</h2>
+<p>Messianic Scripture App is a Scripture reader featuring Cebuano text and the English King James Version. The Cebuano Bible is bundled locally; KJV books are downloaded when first requested and retained in your browser cache when supported.</p>
+</div>
+</section>
+<section class="info-section" id="privacy">
+<div class="info-icon">⌑</div>
+<div><span class="eyebrow">YOUR DATA</span>
+<h2>Privacy &amp; policy</h2>
+<p>The app does not require an account or send reading activity to a server. KJV text is retrieved from a public-domain Bible data repository when needed. Browser storage and cache behavior depends on your browser and how this app is opened.</p>
+</div>
+</section>
+<section class="info-section" id="contact">
+<div class="info-icon">✉</div>
+<div><span class="eyebrow">GET IN TOUCH</span>
+<h2>Contact</h2>
+<p>For feedback or questions about this app, contact the developer through the channel where you received this application.</p>
+<p class="developer">Facebook: <strong><a href="https://www.facebook.com/felip.dev0x32">/felip.dev0x32</a></strong><br />Email: <strong><a href="#">felip.exe@proton.me</a></strong></p>
+</div>
+</section>
+<p>
+<script src="bible-data.js"></script>
+<script src="script.js"></script>
+</p>
+</body></html>
